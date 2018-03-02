@@ -1,0 +1,41 @@
+html{
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+.headerCom{
+    margin-bottom: 10px;
+}
+.SearchNote{
+    width: 50%;
+    margin: 0 auto;
+}
+.searchBar{
+    margin-left: 30%;
+    margin-right: 10px;
+}
+.addcontainer{
+    width: 60%;
+    margin: 0 auto;
+}
+.textA{
+    margin-bottom: 10px;
+}
+.notelist:hover{
+    
+    background-color: #777;
+}
+.gg{
+    text-align: center !important;
+
+}
+.gg:hover{
+    background-color: #eee !important;
+    cursor: pointer;
+}
+.delete{
+    background-color: #fff !important;
+}
