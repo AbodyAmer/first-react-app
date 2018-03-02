@@ -30,6 +30,7 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "semantic-ui-react": "^0.78.3",
-    "start": "^5.1.0"
+    "sfcookies": "^1.0.2"
+ 
   }
 }
