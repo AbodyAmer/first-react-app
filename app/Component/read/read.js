@@ -57,11 +57,15 @@ class Read extends Component{
         this.setState({bodytext:bodytext,deftext:bodytext })
     }
     editNote(){
-        console.log('this is title' , this.state.title)
+        if(this.state.title !=='' && this.state.bodytext ==='')
+        this.props.editnote(this.props.location.state.id , this.state.title , this.state.deftext)
+        else if(this.state.title ==='' && this.state.bodytext !=='')
+        this.props.editnote(this.props.location.state.id , this.state.deftitle , this.state.bodytext)
+        else
         this.props.editnote(this.props.location.state.id , this.state.title , this.state.bodytext)
     }
     onSaveClick(){
-     if(this.state.title !=='' && this.state.bodytext !=='')
+     if(this.state.title !=='' || this.state.bodytext !=='')
       this.editNote()
     
     }
